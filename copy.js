@@ -47,7 +47,7 @@ const main = () => {
     }
     const zhVal = zh[key] || both.zhLocaleMessage[key]
     const enVal = en[key] || both.enLocaleMessage[key]
-    if (zhVal === undefined && enVal === undefined) {
+    if (zhVal === undefined || enVal === undefined) {
       throw new Error(`不存在‘${key}’的翻译，请检查`)
     }
     inputEnKeyValArr[key] = enVal
