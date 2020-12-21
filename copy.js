@@ -80,7 +80,7 @@ const main = () => {
     EXPORTED_PATH,
     `${arr.join('\n')}`,
   )
-  console.log(`\n新增：${inputKeyArr.length}个\n`, inputKeyArr.join('\n '))
+  console.log(`\n新增：${enKeyArr.length}个\n`, enKeyArr.join('\n '))
 }
 
 // 输出模版
